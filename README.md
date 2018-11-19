@@ -16,3 +16,7 @@ I experimented with this css file to confirm my thoughts on the css file by chan
 ## End Game
 
 I now found the tile object appearing in the GameManager file. This file set up the game, and as I scrolled down I found that this.score was set to 0 in the beginning of the game. My first instinct was to change this to 10,000 and after making this change, my score started higher than I had ever gotten it myself. As I scrolled down farther I found the 'value' variable in line 62 (that was a property of the tile object). This variable holds the '2048 value' of the tile, so if I change the value from 2 to 64, I start off on the 6th level.
+
+## Future Changes
+
+I would like to make the end game look more realistic. I am considering bringing the starting value back down to 2 but changing the merging of the tiles so that the merged tiles would be 4x of what they were instead of 2x (as if it went from 2 to 8 to 32 in 2048). This would mean that the final position of the board (when no more moves can be made) would include the 2 and 4 blocks, making it look a lot more realistic (as there are no other ways to lose the game).
